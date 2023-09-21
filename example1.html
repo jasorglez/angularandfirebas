@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(225, 225, 236); /* Cambia el color de fondo a azul */
+            color: red; /* Cambia el color del texto a rojo */
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            /* Aplica estilos adicionales al elemento <pre> */
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo number 1 directoryToTree("dummy_dir/a_dir", 5);</h2>
+    <pre>
+        This path points to the "a_dir" directory, which contains only one empty file. The function should return: 
+        {
+            "path": "dummy_dir/a_dir",
+            "name": "a_dir",
+            "type": "dir",
+            "size": 4096,
+            "children": [
+                {
+                    "path": "dummy_dir/a_dir/test_file1.md",
+                    "name": "test_file1.md",
+                    "type": "file",
+                    "size": 0
+                }
+            ]
+        }
+    </pre>
+</body>
+</html>

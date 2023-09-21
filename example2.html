@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(114, 114, 167); /* Cambia el color de fondo a azul */
+            color: rgb(200, 255, 0); /* Cambia el color del texto a rojo */
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            /* Aplica estilos adicionales al elemento <pre> */
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo number 2 directoryToTree("dummy_dir", 5) </h2>
+    <pre>
+         
+        This example has a depth limitation that includes all files and directories in the tree structure. Pay attention to the file sizes. The function should return: 
+        { 
+            "path": "dummy_dir", 
+            "name": "dummy_dir", 
+            "type": "dir", 
+            "size": 4096, 
+            "children": [ 
+                { 
+                    "path": "dummy_dir/a_dir", 
+                    "name": "a_dir", 
+                    "type": "dir", 
+                    "size": 4096, 
+                    "children": [ 
+                        { 
+                            "path": "dummy_dir/a_dir/test_file1.md", 
+                            "name": "test_file1.md", 
+                            "type": "file", 
+                            "size": 0 
+                        } 
+                    ] 
+                }, 
+                { 
+                    "path": "dummy_dir/b_dir", 
+                    "name": "b_dir", 
+                    "type": "dir", 
+                    "size": 4096, 
+                    "children": [ 
+                        { 
+                            "path": "dummy_dir/b_dir/test_file2.md", 
+                            "name": "test_file2.md", 
+                            "type": "file", 
+                            "size": 4 
+                        } 
+                    ] 
+                }, 
+                { 
+                    "path": "dummy_dir/test_file0.md", 
+                    "name": "test_file0.md", 
+                    "type": "file", 
+                    "size": 13 
+                } 
+            ] 
+        } 
+        
+    </pre>
+</body>
+</html>

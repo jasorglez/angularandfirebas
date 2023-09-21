@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Ejemplo number 1 directoryToTree("dummy_dir", 1)</h2>
+     
+Here, the depth is limited to 1 level (0 represents the root level). In other words, it should only return the root node, "dummy_dir," along with its immediate children. If the depth argument were set to 0, only the root node would be returned (depth is never negative). The output should be: 
+
+    <pre>
+        { 
+            "path": "dummy_dir", 
+            "name": "dummy_dir", 
+            "type": "dir", 
+            "size": 4096, 
+            "children": [ 
+                { 
+                    "path": "dummy_dir/a_dir", 
+                    "name": "a_dir", 
+                    "type": "dir", 
+                    "size": 4096, 
+                    "children": [] 
+                }, 
+                { 
+                    "path": "dummy_dir/b_dir", 
+                    "name": "b_dir", 
+                    "type": "dir", 
+                    "size": 4096, 
+                    "children": [] 
+                }, 
+                { 
+                    "path": "dummy_dir/test_file0.md", 
+                    "name": "test_file0.md", 
+                    "type": "file", 
+                    "size": 13 
+                } 
+            ] 
+        } 
+            </pre>
+</body>
+
+</html>
